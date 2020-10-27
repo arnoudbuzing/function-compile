@@ -1,0 +1,453 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18250,        443]
+NotebookOptionsPosition[     16083,        400]
+NotebookOutlinePosition[     16492,        416]
+CellTagsIndexPosition[     16449,        413]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"fun", "=", 
+  RowBox[{
+  "Get", "[", 
+   "\"\<C:\\\\Users\\\\arnou\\\\function-compile\\\\functions\\\\test.wl\>\"",
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.812806815966812*^9, 3.812806844868019*^9}},
+ CellLabel->
+  "In[141]:=",ExpressionUUID->"edba33df-0fe7-472c-b8f8-03af22a8d226"],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{
+   RowBox[{"{", "}"}], ",", "42"}], "]"}]], "Output",
+ CellChangeTimes->{{3.8128068410163927`*^9, 3.8128068453346977`*^9}},
+ CellLabel->
+  "Out[141]=",ExpressionUUID->"16d5ed90-75b7-495a-89ec-6c577323d0e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["fun"], "Input",
+ CellChangeTimes->{{3.812806845928873*^9, 3.812806846067587*^9}},
+ CellLabel->
+  "In[142]:=",ExpressionUUID->"a7faf522-f8e7-4125-8a56-a0427256a1fc"],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{
+   RowBox[{"{", "}"}], ",", "42"}], "]"}]], "Output",
+ CellChangeTimes->{3.8128068464039817`*^9},
+ CellLabel->
+  "Out[142]=",ExpressionUUID->"a32e2480-da26-4077-99f6-2f0902eef359"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ToString", "[", "$VersionNumber", "]"}]], "Input",
+ CellChangeTimes->{{3.812807095431796*^9, 3.8128071167740574`*^9}},
+ CellLabel->
+  "In[145]:=",ExpressionUUID->"7bdf9f12-c54a-4da7-8beb-48f26bd170fd"],
+
+Cell[BoxData[
+ RowBox[{" ", "\"\<12.2\>\""}]], "Input",
+ CellChangeTimes->{{3.8128071183212614`*^9, 
+  3.8128071183232107`*^9}},ExpressionUUID->"b33a1fb8-a16d-4c24-85d8-\
+be118287adfd"],
+
+Cell[BoxData[
+ RowBox[{" ", "12.2`"}]], "Input",
+ CellChangeTimes->{{3.8128071057584915`*^9, 
+  3.812807105761528*^9}},ExpressionUUID->"f2d61c3c-75e5-4a20-872f-\
+090efaa01585"],
+
+Cell[BoxData["CreateDirectory"], "Input",
+ CellChangeTimes->{{3.812807252531423*^9, 
+  3.8128072541943207`*^9}},ExpressionUUID->"2fc20888-aad2-4c5e-b73f-\
+ed90158d3cc9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fun", "=", 
+  RowBox[{
+  "LibraryFunctionLoad", "[", 
+   "\"\<C:\\\\Users\\\\arnou\\\\function-compile\\\\lib\\\\12.2\\\\Windows-\
+x86-64\\\\consecutive-integers-in-a-list.dll\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8128081008449993`*^9, 3.81280812653559*^9}},
+ CellLabel->
+  "In[147]:=",ExpressionUUID->"a25dc2dc-f4a0-4dda-adbd-036bfb32cf8d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["CompiledCodeFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.25, StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"PackedArray\"", "]"}], 
+                    "[", 
+                    RowBox[{"\"Integer64\"", ",", "\"1\""}], "]"}], "}"}], 
+                    "\[Rule]", "\"Expression\""}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.25, StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"TypeSpecifier", "[", "\"PackedArray\"", "]"}], 
+                    "[", 
+                    RowBox[{"\"Integer64\"", ",", "\"1\""}], "]"}], "}"}], 
+                    "\[Rule]", "\"Expression\""}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  CompiledCodeFunction[
+   Association["Signature" -> TypeSpecifier[{
+        TypeSpecifier[
+         "PackedArray"["Integer64", 
+          TypeFramework`TypeLiteral[1, "MachineInteger"]]]} -> "Expression"], 
+    "ErrorFunction" -> Automatic, "LoadedFunction" -> 
+    LibraryFunction[
+     "C:\\Users\\arnou\\function-compile\\lib\\12.2\\Windows-x86-64\\\
+consecutive-integers-in-a-list.dll", "Main_ExprInvocation_Pointer", {}, 
+      Integer], "FunctionName" -> "Main", "LibraryPath" -> 
+    "C:\\Users\\arnou\\function-compile\\lib\\12.2\\Windows-x86-64\\\
+consecutive-integers-in-a-list.dll", "VersionData" -> {12.2, 0, 0}, 
+    "SystemID" -> "Windows-x86-64", "Input" -> Function[{
+       Typed[$CellContext`list, 
+        TypeSpecifier["PackedArray"]["MachineInteger", 1]]}, 
+      Module[{$CellContext`i = 1, $CellContext`s = 1, $CellContext`result = 
+        CreateDataStructure["DynamicArray"]}, 
+       While[$CellContext`i < Length[$CellContext`list], 
+         If[Part[$CellContext`list, $CellContext`i + 1] - 
+            Part[$CellContext`list, $CellContext`i] != 
+           1, $CellContext`result["Append", {
+              Part[$CellContext`list, $CellContext`s], 
+              
+              Part[$CellContext`list, $CellContext`i]}]; $CellContext`s = \
+$CellContext`i + 1]; $CellContext`i = $CellContext`i + 1; 
+         Null]; $CellContext`result["Append", {
+          Part[$CellContext`list, $CellContext`s], 
+          Part[$CellContext`list, $CellContext`i]}]; 
+       Normal[$CellContext`result]]]], 140719270141056, 140719270140768, 
+   140719270140976, 140719270137856, 
+   "{TypeSpecifier[\"PackedArray\"[\"Integer64\", \
+TypeFramework`TypeLiteral[1, \"MachineInteger\"]]]} -> \"Expression\""],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.812808118556203*^9, 3.812808126945341*^9}},
+ CellLabel->
+  "Out[147]=",ExpressionUUID->"10293818-ebf6-4a02-b23e-83016ed9a379"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fun", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "5", ",", "6", ",", "7"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.812808129006876*^9, 3.8128081364774513`*^9}},
+ CellLabel->
+  "In[148]:=",ExpressionUUID->"f2829035-98b1-4f67-a63f-bf361b83aff3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "7"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8128081370702567`*^9},
+ CellLabel->
+  "Out[148]=",ExpressionUUID->"c58b9632-a1d1-4634-a910-c4b5e6d53e74"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fun", "=", 
+  RowBox[{
+  "LibraryFunctionLoad", "[", 
+   "\"\<C:\\\\Users\\\\arnou\\\\function-compile\\\\lib\\\\12.1\\\\Windows-\
+x86-64\\\\test.dll\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8128081008449993`*^9, 3.81280812653559*^9}, {
+  3.8128081888053503`*^9, 3.812808209564931*^9}},
+ CellLabel->
+  "In[149]:=",ExpressionUUID->"c523cc93-2448-4611-9fa4-d5ebd60ebe90"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LibraryFunctionLoad", "noform", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\\
+arnou\\\\\\\\\\\\\\\\function-compile\\\\\\\\\\\\\\\\lib\\\\\\\\\\\\\\\\12.1\\\
+\\\\\\\\\\\\\\Windows-x86-64\\\\\\\\\\\\\\\\test.dll\\\\\\\"\\\"}]\\) is not \
+a structured library that can be loaded.\"", 2, 149, 12, 30721358552067162098,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8128082186864767`*^9},
+ CellLabel->
+  "During evaluation of \
+In[149]:=",ExpressionUUID->"fa6caedc-ef98-45aa-b002-4e5f0cdc5366"],
+
+Cell[BoxData[
+ RowBox[{"LibraryFunctionLoad", 
+  "[", "\<\"C:\\\\Users\\\\arnou\\\\function-compile\\\\lib\\\\12.1\\\\\
+Windows-x86-64\\\\test.dll\"\>", "]"}]], "Output",
+ CellChangeTimes->{3.812808218700258*^9},
+ CellLabel->
+  "Out[149]=",ExpressionUUID->"7a8a6071-6f53-4da3-868e-2291baaea8ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fun", "=", 
+  RowBox[{
+  "LibraryFunctionLoad", "[", 
+   "\"\<C:\\\\Users\\\\arnou\\\\function-compile\\\\lib\\\\12.2\\\\Windows-\
+x86-64\\\\test.dll\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8128081008449993`*^9, 3.81280812653559*^9}, {
+  3.8128081888053503`*^9, 3.812808209564931*^9}, {3.812808265656273*^9, 
+  3.8128082677112885`*^9}},
+ CellLabel->
+  "In[150]:=",ExpressionUUID->"303fa39f-d118-4f2b-8cf5-965ac7e256e9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["CompiledCodeFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.25, StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", "}"}], "\[Rule]", "\"Integer64\""}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.25, StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", "}"}], "\[Rule]", "\"Integer64\""}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  CompiledCodeFunction[
+   Association[
+   "Signature" -> TypeSpecifier[{} -> "Integer64"], "ErrorFunction" -> 
+    Automatic, "LoadedFunction" -> 
+    LibraryFunction[
+     "C:\\Users\\arnou\\function-compile\\lib\\12.2\\Windows-x86-64\\test.\
+dll", "Main_ExprInvocation_Pointer", {}, Integer], "FunctionName" -> "Main", 
+    "LibraryPath" -> 
+    "C:\\Users\\arnou\\function-compile\\lib\\12.2\\Windows-x86-64\\test.dll",
+     "VersionData" -> {12.2, 0, 0}, "SystemID" -> "Windows-x86-64", "Input" -> 
+    Function[{}, 42]], 140718522110048, 140718522109968, 140718522110016, 
+   140718522109952, "{} -> \"Integer64\""],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.812808270253259*^9},
+ CellLabel->
+  "Out[150]=",ExpressionUUID->"7bd18ad6-a124-4ecb-9ebd-7fdd28b13700"]
+}, Open  ]],
+
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.812808728253889*^9, 3.8128087289398375`*^9}},
+ CellLabel->
+  "In[151]:=",ExpressionUUID->"c004595e-ec7c-44d4-8f89-deb5770b01d8"]
+},
+WindowSize->{606., 742.875},
+WindowMargins->{{-4.125, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (October 20, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a3148ce9-855d-4ad1-924b-a2f22ea4b771"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 312, 8, 28, "Input",ExpressionUUID->"edba33df-0fe7-472c-b8f8-03af22a8d226"],
+Cell[895, 32, 258, 6, 32, "Output",ExpressionUUID->"16d5ed90-75b7-495a-89ec-6c577323d0e5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1190, 43, 178, 3, 28, "Input",ExpressionUUID->"a7faf522-f8e7-4125-8a56-a0427256a1fc"],
+Cell[1371, 48, 232, 6, 32, "Output",ExpressionUUID->"a32e2480-da26-4077-99f6-2f0902eef359"]
+}, Open  ]],
+Cell[1618, 57, 225, 4, 28, "Input",ExpressionUUID->"7bdf9f12-c54a-4da7-8beb-48f26bd170fd"],
+Cell[1846, 63, 185, 4, 28, InheritFromParent,ExpressionUUID->"b33a1fb8-a16d-4c24-85d8-be118287adfd"],
+Cell[2034, 69, 176, 4, 28, InheritFromParent,ExpressionUUID->"f2d61c3c-75e5-4a20-872f-090efaa01585"],
+Cell[2213, 75, 169, 3, 28, "Input",ExpressionUUID->"2fc20888-aad2-4c5e-b73f-ed90158d3cc9"],
+Cell[CellGroupData[{
+Cell[2407, 82, 374, 8, 67, "Input",ExpressionUUID->"a25dc2dc-f4a0-4dda-adbd-036bfb32cf8d"],
+Cell[2784, 92, 6092, 126, 96, "Output",ExpressionUUID->"10293818-ebf6-4a02-b23e-83016ed9a379"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8913, 223, 297, 7, 28, "Input",ExpressionUUID->"f2829035-98b1-4f67-a63f-bf361b83aff3"],
+Cell[9213, 232, 298, 9, 32, "Output",ExpressionUUID->"c58b9632-a1d1-4634-a910-c4b5e6d53e74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9548, 246, 399, 9, 67, "Input",ExpressionUUID->"c523cc93-2448-4611-9fa4-d5ebd60ebe90"],
+Cell[9950, 257, 583, 12, 43, "Message",ExpressionUUID->"fa6caedc-ef98-45aa-b002-4e5f0cdc5366"],
+Cell[10536, 271, 295, 6, 52, "Output",ExpressionUUID->"7a8a6071-6f53-4da3-868e-2291baaea8ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10868, 282, 450, 10, 67, "Input",ExpressionUUID->"303fa39f-d118-4f2b-8cf5-965ac7e256e9"],
+Cell[11321, 294, 4562, 98, 65, "Output",ExpressionUUID->"7bd18ad6-a124-4ecb-9ebd-7fdd28b13700"]
+}, Open  ]],
+Cell[15898, 395, 181, 3, 28, "Input",ExpressionUUID->"c004595e-ec7c-44d4-8f89-deb5770b01d8"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,5 +1,5 @@
 home = DirectoryName @ $InputFileName;
-files = FileNames[ "*.wl", FileNameJoin[{ home, "functions"}] ];
+files = FileNames[ "*.wl", FileNameJoin[{ home, "fun"}] ];
 
 libdir = FileNameJoin[{ home, "lib", ToString[$VersionNumber], $SystemID }];
 If[ FileType[libdir] =!= Directory, CreateDirectory[libdir, CreateIntermediateDirectories -> True] ];
