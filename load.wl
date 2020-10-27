@@ -10,3 +10,5 @@ Scan[
  ],
  files
 ]
+
+AppendTo[$ContextPath, "c`"]
