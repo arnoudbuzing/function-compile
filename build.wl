@@ -7,10 +7,10 @@ If[ FileType[libdir] =!= Directory, CreateDirectory[libdir, CreateIntermediateDi
 Scan[
  Function[{file},
   lib = FileNameJoin[ { libdir, FileBaseName[file]<>".dll" } ];
-  WriteString[$Output, lib <> "\t"];
+  WriteString[$Output, StringPadRight[ FileBaseName @ lib, 40 ] <> "\t"];
   fun = Get[file];
   timing = First @ AbsoluteTiming @ FunctionCompileExportLibrary[lib, fun];
-  WriteString[$Output, ToString @ timing <> "\n"];
+  WriteString[$Output, StringPadLeft[ ToString @ Round[ 1000*timing ], 10] <> "\n"];
  ],
  files
 ]

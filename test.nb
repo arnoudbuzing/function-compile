@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     33329,        780]
-NotebookOptionsPosition[     28106,        683]
-NotebookOutlinePosition[     28945,        707]
-CellTagsIndexPosition[     28902,        704]
+NotebookDataLength[     38192,        908]
+NotebookOptionsPosition[     32007,        796]
+NotebookOutlinePosition[     32846,        820]
+CellTagsIndexPosition[     32803,        817]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -678,6 +678,119 @@ Cell[BoxData["$Failed"], "Output",
  CellChangeTimes->{3.8128184765736694`*^9, 3.8128187110802393`*^9},
  CellLabel->"Out[42]=",ExpressionUUID->"c081b771-59b7-4deb-b3d1-964ba2349692"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["x", "Subsubsection",
+ CellChangeTimes->{
+  3.8128187704913807`*^9},ExpressionUUID->"732ed025-81fd-4882-b8bf-\
+136be75f9cb6"],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{"binomial", ",", "factorial"}], "]"}]], "Input",
+ CellChangeTimes->{{3.812818935197998*^9, 3.8128189414884996`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"2f7f6f6a-38c9-4c88-b88b-da5ea1c9878f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"binomial", "=", 
+   RowBox[{"FunctionCompile", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Function", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Typed", "[", 
+          RowBox[{"n", ",", "\"\<MachineInteger\>\""}], "]"}], ",", 
+         RowBox[{"Typed", "[", 
+          RowBox[{"k", ",", "\"\<MachineInteger\>\""}], "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Quotient", "[", 
+        RowBox[{
+         RowBox[{"fac", "[", "n", "]"}], ",", 
+         RowBox[{
+          RowBox[{"fac", "[", "k", "]"}], "*", 
+          RowBox[{"fac", "[", 
+           RowBox[{"n", "-", "k"}], "]"}]}]}], "]"}]}], "]"}], "/.", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"fac", "\[Rule]", 
+       RowBox[{"Typed", "[", 
+        RowBox[{
+         RowBox[{"KernelFunction", "[", "factorial", "]"}], ",", 
+         RowBox[{
+          RowBox[{"{", "\"\<MachineInteger\>\"", "}"}], "\[Rule]", 
+          "\"\<MachineInteger\>\""}]}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.812818771466176*^9, 3.8128188802010965`*^9}, 
+   3.8128189230170283`*^9, {3.8128189774542103`*^9, 3.8128189884263477`*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"3bffe9a5-2c40-46bd-a804-a5f1ad7f1c61"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"binomial", "[", 
+  RowBox[{"5", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.812818891403629*^9, 3.8128188938308325`*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"4940e055-421f-46fe-81c1-2b81b351c043"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CompiledCodeFunction", "uncomp", 
+   "\"A compiled code runtime error occurred; reverting to uncompiled \
+evaluation: \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"ExpressionConversion\\\\\\\"\\\"}]\\).\"", 2, 59,
+    11, 30721483155163590627, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.812819012480258*^9},
+ CellLabel->
+  "During evaluation of \
+In[59]:=",ExpressionUUID->"7b9e5076-23f0-4021-8441-21305514c266"],
+
+Cell[BoxData[
+ RowBox[{"Quotient", "[", 
+  RowBox[{
+   RowBox[{"factorial", "[", "5", "]"}], ",", 
+   RowBox[{
+    RowBox[{"factorial", "[", "2", "]"}], " ", 
+    RowBox[{"factorial", "[", "3", "]"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.8128188941699114`*^9, 3.8128189498852043`*^9, {3.812818998176093*^9, 
+   3.8128190124892664`*^9}},
+ CellLabel->"Out[59]=",ExpressionUUID->"1998012c-760d-4525-884f-ff201d89d5e9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"factorial", "=", 
+   RowBox[{"FunctionCompile", "[", 
+    RowBox[{"Function", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Typed", "[", 
+        RowBox[{"n", ",", "\"\<MachineInteger\>\""}], "]"}], "}"}], ",", 
+      RowBox[{"Fold", "[", 
+       RowBox[{"Times", ",", 
+        RowBox[{"Range", "[", "n", "]"}]}], "]"}]}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.812818903211725*^9, 3.8128189124044795`*^9}, 
+   3.812818952039399*^9},
+ CellLabel->"In[60]:=",ExpressionUUID->"4e93126b-3d45-4ca4-a060-4c4ee67664e8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"binomial", "[", 
+  RowBox[{"5", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8128189547633557`*^9, 3.812818958375511*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"947c3537-5ff4-4f21-861b-f23a6d8049e3"],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.812818958743081*^9, 3.8128190177000246`*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"bf8d3ed9-07b4-44b7-bf82-2f7fe97ae4cc"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -779,6 +892,21 @@ Cell[27469, 664, 176, 2, 32, "Output",ExpressionUUID->"b9810938-670d-44ec-8159-4
 Cell[CellGroupData[{
 Cell[27682, 671, 200, 3, 28, "Input",ExpressionUUID->"c7f8ee6b-fb7d-4e79-819c-543c3528e9de"],
 Cell[27885, 676, 181, 2, 32, "Output",ExpressionUUID->"c081b771-59b7-4deb-b3d1-964ba2349692"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28115, 684, 130, 3, 45, "Subsubsection",ExpressionUUID->"732ed025-81fd-4882-b8bf-136be75f9cb6"],
+Cell[28248, 689, 243, 4, 28, "Input",ExpressionUUID->"2f7f6f6a-38c9-4c88-b88b-da5ea1c9878f"],
+Cell[28494, 695, 1305, 33, 87, "Input",ExpressionUUID->"3bffe9a5-2c40-46bd-a804-a5f1ad7f1c61"],
+Cell[CellGroupData[{
+Cell[29824, 732, 231, 4, 28, "Input",ExpressionUUID->"4940e055-421f-46fe-81c1-2b81b351c043"],
+Cell[30058, 738, 458, 11, 24, "Message",ExpressionUUID->"7b9e5076-23f0-4021-8441-21305514c266"],
+Cell[30519, 751, 424, 10, 32, "Output",ExpressionUUID->"1998012c-760d-4525-884f-ff201d89d5e9"]
+}, Open  ]],
+Cell[30958, 764, 576, 15, 28, "Input",ExpressionUUID->"4e93126b-3d45-4ca4-a060-4c4ee67664e8"],
+Cell[CellGroupData[{
+Cell[31559, 783, 231, 4, 28, "Input",ExpressionUUID->"947c3537-5ff4-4f21-861b-f23a6d8049e3"],
+Cell[31793, 789, 174, 2, 32, "Output",ExpressionUUID->"bf8d3ed9-07b4-44b7-bf82-2f7fe97ae4cc"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
